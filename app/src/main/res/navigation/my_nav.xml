@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:itemBackground="@color/grey"
+    app:itemIconTint="@drawable/selector"
+    app:itemRippleColor="@android:color/darker_gray"
+    app:itemTextColor="@drawable/selector"
+    app:labelVisibilityMode="labeled"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.myapplication.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.myapplication.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user"/>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.myapplication.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>
